@@ -13,7 +13,6 @@ const app = express();
     app.use(bodyParser.json())
     app.use(cors())
 
-    await require('./controllers/usuarios.controller')(app);
     await require('./controllers/tarefas.controller')(app);
 
 
