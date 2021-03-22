@@ -1,0 +1,26 @@
+{
+  "name": "to_do_list_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "export NODE_ENV=development && nodemon src/index.js",
+    "start": "export NODE_ENV=development && node src/index.js",
+    "test": "ava --verbose"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ava": "^0.22.0",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.16.4",
+    "express-list-endpoints": "^4.0.0",
+    "mysql": "^2.18.1",
+    "request": "latest",
+    "restify": "^5.1.0",
+    "restify-cors-middleware": "^1.0.1"
+  }
+}
