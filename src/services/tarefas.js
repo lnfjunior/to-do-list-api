@@ -11,7 +11,7 @@ const _save = async (nome_usuario, email_usuario, descricao, status) => {
 
 const _update = async (id, nome_usuario, email_usuario, descricao, status) => {
     try {
-        return await mysql.query(`UPDATE tarefas SET nome_usuario = ${nome_usuario}, email_usuario = ${email_usuario}, descricao ='${descricao}', status ='${status}' WHERE id = ${id}`)
+        return await mysql.query(`UPDATE tarefas SET nome_usuario = '${nome_usuario}', email_usuario = '${email_usuario}', descricao ='${descricao}', status ='${status}' WHERE id = ${id}`)
     } catch (e) {
         return `Falha ao atualizar tarefa: ${e}`
     }
